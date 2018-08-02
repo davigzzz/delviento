@@ -188,7 +188,9 @@ height: 300px;
     }
 
     .contactamos{
-        height: 200px;;
+        height: 220px;
+        
+        display: inline-block;
     }
     
     .contactamos h1{
@@ -221,11 +223,7 @@ height: 300px;
     width: 55%;
   }
   
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+ 
 
   @media screen and (max-width: 600px) {
     .right2{
