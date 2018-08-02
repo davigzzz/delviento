@@ -16,14 +16,21 @@ body {
 
 }
 
-.navbar{
+ .navbar{
     background-color: #E3C7C0;
-    height: 5rem;    
+      
 }
+
+@media only screen and (min-width: 768px) {
+.navbar{
+    height: 5rem;  
+}
+}
+
 
 .nav-item{
     padding-left: 1rem;
-}
+} 
 
 @media screen and (max-width: 480px) {
     .imagen {
