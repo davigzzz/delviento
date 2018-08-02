@@ -25,10 +25,24 @@ body {
     padding-left: 1rem;
 }
 
+@media screen and (max-width: 480px) {
+    .imagen {
+      order: 2;
+    }
+
+    .left{
+     order: 1;
+    }
+
+    .right{
+        order: 3;
+    }
+}
 
 
  .row1 {
     height: 20rem;
+    position: static;
 } 
 /* Create two unequal columns that floats next to each other */
 .column {
@@ -73,8 +87,7 @@ body {
     width: 50%;
 }
 
-.campo:nth-child(1){
-}
+
 
 
 
@@ -88,6 +101,9 @@ body {
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
+    }
+    row1{
+        height: 0px;
     }
     .right{
         width: 100%;        
@@ -125,11 +141,22 @@ body {
     content: url("sillas.png");
 }
 
+#movil{
+    display:none;
+}
+
 @media screen and (max-width: 600px){
     #sillas{
+        display: none;
+        visibility: hidden;
         content: url("silla_movil.png");
     }
+    #movil{
+        content: url("silla_movil.png");
+        display: block;
+    }
 }
+
 
 
 .contactamos{
@@ -180,6 +207,8 @@ height: 300px;
 .row{
     margin-left: 0px;
     margin-right: 0px;
+    display: inline-block;
+    
 }
 .textura{
     object-fit: contain;
@@ -192,6 +221,11 @@ height: 300px;
     width: 55%;
   }
   
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
   @media screen and (max-width: 600px) {
     .right2{
