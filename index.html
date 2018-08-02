@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delviento</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <!-- Estilo custom -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Fontawesome (íconos) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">delviento</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">nosotros
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">di spreh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fab fa-facebook-f fa-1.5x"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                            <i class="fab fa-google-plus-g fa-1.5x"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                            <i class="fab fa-linkedin-in fa-1.5x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- <div class="header">
+        <a href="#default" class="nombre">delviento</a>
+        <div class="header-right">
+            <a class="active" href="#home">Nosotros</a>
+            <a href="#producto">Contacto</a>
+            <a href="#contacto">Productos</a>
+            <a href="#about">Dispreh</a>
+            <i class="fab fa-facebook-f fa-2x"></i>
+            <i class="fab fa-google-plus-g fa-2x"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </div> -->
+    <!-- TEXTO Y CONTACTO -->
+    <div class="row1">
+        <div class="column left">
+            <h1 style="font-size: 28.74px">¿Nos contactas?</h1>
+            <p style="font-size:12.07px"> Para cualquier duda o cosultoría, por favor contáctanos por el medio que gustes. Nuestro horario de atención
+                es de 9:00 a 19:00 hora de lunes a viernes.</p>
+        </div>
+        <div class="column right">
+            <div class="campo">
+                <b>cel.</b>55-44-13-55-99<b>cel</b>55-43-13-55-99</div>
+            <div class="campo">
+                <b>dir</b>. Valle de Caceres #142, San Javier, Pachuca. </div>
+            <div class="campo">
+                <b>mail.</b> contacto@delviento.com.mx</div>
+            <div class="campo">
+                <b>mail.</b> ventas@delviento.com.mx</div>
+
+
+        </div>
+    </div>
+
+    <!-- IMAGEN -->
+    <img src="sillas.png" class="img-fluid" alt="Sillas">
+
+    <!-- CONTACTAMOS Y FORMULARIO -->
+    <div class="contactamos">
+        <h1>¿Te contactamos?</h1>
+        <p>Si lo prefieres, nosotros nos ponemos en contacto contigo.
+            <br> Regálenos los siguientes datos y te contactamos a la brevedad.</p>
+    </div>
+
+    <div class="row">
+        <div class="column left">
+            <div class="foto">
+                <img src="textura.png" class="img-fluid" alt="Textura">
+            </div>
+        </div>
+        <div class="column right2">
+            <form action="/forma.php" class="formulario">
+                <br>
+                <input type="text" name="nombre" placeholder="NOMBRE*">
+                <br>
+                <br>
+                <input type="text" name="apellido" placeholder="APELLIDO">
+                <br>
+                <br>
+                <input type="text" name="correo" id="" placeholder="CORREO E.*">
+                <br>
+                <br>
+                <input type="text" name="telefono" id="" placeholder="TELÉFONO">
+                <br>
+                <br>
+                <div class="terms">
+                    ACEPTO TÉRMINOS Y CONDICIONES
+                </div>
+                <input type="submit" value="ENVIAR">
+            </form>
+        </div>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746.8656037392343!2d-98.75532688452557!3d20.097904186509876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a0b3d10f7365%3A0x9430dfa5aa4e29f!2sValle+de+C%C3%A1ceres+142%2C+Valle+de+San+Javier%2C+42086+Pachuca+de+Soto%2C+Hgo.!5e0!3m2!1sen!2smx!4v1533172140182"
+        width=" 90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <!-- FOOTER -->
+
+
+
+
+</body>
+
+</html>
