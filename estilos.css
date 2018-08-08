@@ -1,4 +1,7 @@
 * {box-sizing: border-box;}
+:root {
+    font-size: 16px;
+    }
 
 body { 
   margin: 0;
@@ -21,11 +24,11 @@ body {
       
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
 .navbar{
     height: 5rem;  
 }
-}
+} */
 
 
 .nav-item{
@@ -80,19 +83,12 @@ body {
   width: 45%;
   background-color: #F2F2F2;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.campo{
-    padding-left: 2rem;
-    font-size: 15.07px;
-    padding-top:2.7rem;
-    
-}
 
-.telefono{
-    float: left;
-    width: 50%;
-}
+
 
 
 
@@ -105,53 +101,135 @@ body {
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
+
+
+/* Datos de contacto */
+/* Datos de contacto Teléfono */
+@media only screen and (max-width: 600px) {
+
+        .column {
+            width: 100%;
+        }
+        row1{
+            height: 0px;
+        }
+        .right{
+            width: 100%; 
+            height: 276px;       
+        }
+        .left{
+            width: 100%;
+        }
+        .left .titulo{
+            padding-top: 1.5rem;
+            padding-left: 1rem;
+        }
+        
+        .left p{
+            padding: 1rem;
+        }
+    
+        .right div{
+            padding-left: 35px;
+    
+        }
+    
+        .right div:nth-child(1){
+            padding-top: 50px;
+            padding-right: 61px;
+
+           
+        }
+
+        .right div:last-child{
+            padding-bottom: 55px;
+        }
+        
+        .right div:nth-child(3){
+            display:none;
+            
+        }
+    
+        
+    }
+/* Datos de contacto tablet */
+@media only screen and (min-width: 768px) and (max-width: 899px) {
     .column {
         width: 100%;
     }
     row1{
         height: 0px;
     }
-    .right{
-        width: 100%;        
-    }
+       
+    
     .left{
         width: 100%;
     }
-    .left .titulo{
-        padding-top: 1.5rem;
-        padding-left: 1rem;
-    }
-    .campo{
-        padding-top: 2.5rem;
+
+    
+    .right{
+        width: 100%;
+        height: 285px;
+        font-size: 12px;
     }
 
-    .direccion{
-        display: none;
+    .right div:nth-child(1){
+        padding-left: 38px;
+        padding-right: 61px;
+        padding-top: 90px;
+        order:1;
+    }
+    .right div:nth-child(2){
+        padding-right: 61px;
+        padding-top: 90px;
+        order:2;
+    }
+    .right div:nth-child(3){
+        
+        order: 5;
     }
 
-    .telefono{
-        float: none;
-        width: 100%
+    .right div:nth-child(4){
+        padding-left: 38px;
+        padding-right: 20px;
+        order: 4;
+    }
+    .right div:nth-child(5){
+        padding-top: 90px;
+        order: 3;
     }
 
-    .telefono:nth-child(2){
-        padding-top: 2.5rem;
-    }
 
-    .left p{
-        padding: 1rem;
-    }
 }
+/* Datos de Contacto Laptop y más */
+@media only screen and (min-width: 900px) {
+    .right div{
+        padding-left: 3rem;
+       
+    }
+    
+    .right div:nth-child(1){
+        padding-right: 3rem;
+    }
+    
+    .right div:nth-child(1), .right div:nth-child(2){
+        padding-top: 3rem;
+    }
+    
+    .right div:last-child{
+        padding-bottom: 2rem;
+    }
+} 
 
+
+/* IMAGEN DE SILLAS, RESPONSIVE */
 #sillas{
     content: url("sillas.png");
 }
-
 #movil{
     display:none;
 }
-
+/* Telefono */
 @media screen and (max-width: 600px){
     #sillas{
         display: none;
@@ -163,8 +241,7 @@ body {
         display: block;
     }
 }
-
-
+/* ****************** */
 
 .contactamos{
 height: 300px;
@@ -314,5 +391,154 @@ input[type=submit]{
         width: 100%;
         padding-top: 0;
         padding-left: 0;
+    }
+}
+
+/* Comienza footer */
+
+.footer-delv{
+    height: 11.75rem;
+    background-color: #1A1F33;
+    color: white;
+}
+
+ul#foot{
+    padding-top: 4rem;
+    margin: 0;
+}
+
+ul#foot li {
+    display:inline;
+    padding-right: 7.5%;
+}
+
+ul#foot li:nth-child(1){
+    padding-left: 1rem;
+}
+
+.copydesarrollo-contenedor{
+    float: left;
+    width: 100%;
+    height: 3rem;;
+}
+
+.column-footer{
+    float: left;
+}
+
+.left3{
+    width: 80%;
+}
+
+.right3{
+    width: 20%;
+}
+
+p#copy{
+    font-size: .7em;
+    padding-left: 40%;
+    padding-top: 2rem;
+}
+
+p#desarrollo{
+    padding-top: 2rem;
+    font-size: .5em;
+}
+
+.footer-contacto{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-tablet{
+        display: none;
+    }
+    
+    ul#foot{
+        display:none;
+    }
+
+    .right3{
+        display: none;
+    }
+
+    .left3{
+        width: 100%;
+    }
+
+    p#copy{
+        padding-left: 1.6rem;
+        font-size: 0.5rem;
+    }
+    
+    
+
+    .footer-contacto{
+        display: block;
+        font-size: 0.6rem;
+        padding-left: 25%;
+        padding-top: 25%;
+    }
+
+    .numero{
+        padding-left: 3rem;
+        padding-bottom: 0.5rem;
+    }
+    
+} 
+
+@media only screen and (min-width: 768px) and (max-width:899px){
+    .footer-tablet{
+        display: flex;
+        height: 258px;
+        background-color: #1A1F33;
+        color: white;
+    }
+
+    .direccion{
+        font-size: 10.25px;
+        flex-basis: 27.5%;
+        padding-left: 25px;
+        padding-top: 50px;
+    }
+    .direccion p{
+        line-height: 23.25px;
+        padding-top: 10px;
+    }
+    
+    .regresar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-basis: 45%;
+    }
+
+    .flecha{
+        padding-top: 20px;
+    }
+
+    .texto{
+        font-size: 12px;
+        padding-top: 35px;
+    }
+    .legal{
+        letter-spacing: 1px;
+        font-size: 9px;
+        padding-top: 100px;
+    }
+
+    .estimado{
+        flex-basis: 27.5%;
+    }
+
+    .footer-delv{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .footer-tablet{
+        display: none;
     }
 }
