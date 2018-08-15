@@ -11,6 +11,7 @@ body {
     
 }
 
+/* disminuir el letter spacing en teléfonos */
 @media screen and (max-width: 600px) {
     body{
         letter-spacing: 2px;
@@ -19,22 +20,26 @@ body {
 
 }
 
+
+/* MENU *************************************************/
+/* Hacer crecer la barra del menú (mas alta) */
+.navbar{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+/* cambiar fondo del menú */
  .navbar{
     background-color: #E3C7C0;
       
 }
-
-/* @media only screen and (min-width: 768px) {
-.navbar{
-    height: 5rem;  
-}
-} */
-
-
+/* espaciar elementos del menu */
 .nav-item{
     padding-left: 1rem;
 } 
+/* ***************************************************** */
 
+
+/* Cambiar orden de las cosas en móviles */
 @media screen and (max-width: 480px) {
     .imagen {
       order: 2;
@@ -278,18 +283,7 @@ body {
     }
 }
 /* ****************** */
-#textura{
-    content: url("textura.png");
-}
-#ipad{
-    display:none;
-}
 
-@media only screen and (min-width: 768px) and (max-width: 899px) {
-    #textura{
-        content: url("textura_ipad.png");
-    }
-}
 
 
 
@@ -340,6 +334,8 @@ height: 300px;
     }
 }
 
+/* INICIA IMAGEN CON FORMULARIO */
+
 .row{
     margin-left: 0px;
     margin-right: 0px;
@@ -357,19 +353,22 @@ height: 300px;
     width: 55%;
   }
   
- 
-
-  @media screen and (max-width: 600px) {
-    .right2{
-        width: 100%;
-        order: 1;
-    }
-    .left2{
-        width: 100%;
-        order:2;
-    }
+  /* IMAGEN DE TEXTURA */
+  #textura{
+    content: url("textura.png");
+}
+#ipad{
+    display:none;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+    #textura{
+        content: url("textura_ipad.png");
+    }
+} 
+
+ 
+/* texto del formulario */
 input[type=text]{
     width: 80%;
     margin: 8px 0;
@@ -377,24 +376,25 @@ input[type=text]{
     border: none;
     border-bottom: 2px solid gray;
     margin-bottom:3rem; 
+    font-size: 1rem;
 }
-
+/* formulario */
 .formulario{
     padding-left: 5rem;
 }
-
+/* terminos bajo el formulario */
 .terms{
     font-size: 9.37px;
     text-align: center;
     padding-right: 5rem;
     padding-top: 1rem;
 }
-
+/* boton de formulario */
 input[type=submit]{
     align-items: center;
     align-content: center;
     margin-top: 2rem;
-    
+    font-size: 1rem;
     margin-left: 35%;
     border: 1px solid;
     border-color:rgba(0, 113, 176, 255);
@@ -404,7 +404,7 @@ input[type=submit]{
     
 }
 
-
+/* imagen y formulario para telefono */
 @media screen and (max-width: 600px) {
     .formulario{
         padding-left: 3rem;
@@ -418,20 +418,45 @@ input[type=submit]{
     input[type=submit]{
         margin-left: 30%;
         margin-bottom: 2rem;
-
     }
+
+    .right2{
+        width: 100%;
+        order: 1;
+    }
+    .left2{
+        width: 100%;
+        order:2;
+    }
+}
+
+/* modificacion de columnas con imagen y formulario para tablet */
+@media only screen and (min-width: 768px) and (max-width:899px){
+    .left2{
+        width: 45%;
+    }
+    .right2{
+        width: 55%;
+    }
+
+    .terms{
+        padding-top: 0rem;
+    }
+}
+/* ******************************************************** */
+
+/* para eliminar espacio entre divs que envuelven iframe */
+.grande{
+    font-size: 0;
+}
+
+.fas{
+    font-size: 1.5rem;
 }
 
 
 
-.footer {
-    position: relative;
-    margin-top: -150px; /* negative value of footer height */
-    height: 150px;
-    clear:both;
-    padding-top:20px;
-  } 
-
+  /* mapa google maps */
    iframe{
       /* padding-top: 5rem;    
        padding-left: 5rem;  */
@@ -451,7 +476,7 @@ input[type=submit]{
 /* Comienza footer */
 
 .footer-delv{
-
+    font-size: 1rem;
     height: 11.75rem;
     background-color: #1A1F33;
     color: white;
@@ -465,7 +490,7 @@ ul#foot{
 
 ul#foot li {
     display:inline;
-    width: 16%
+    width: 16%;
 }
 
  ul#foot li:nth-child(1){
@@ -496,6 +521,7 @@ p#copy{
     padding-top: 2rem;
 }
 
+/* arreglado el centro */
 @media only screen and (min-width: 1600px){
     p#copy{
         padding-left: 45%;
@@ -512,6 +538,7 @@ p#desarrollo{
     display: none;
 }
 
+/* footer telefono */
 @media only screen and (max-width: 600px) {
     .footer-tablet{
         display: none;
@@ -549,7 +576,7 @@ p#desarrollo{
     }
     
 } 
-
+/* footer tablet */
 @media only screen and (min-width: 768px) and (max-width:899px){
     .footer-tablet{
         display: flex;
@@ -593,6 +620,11 @@ p#desarrollo{
 
     .estimado{
         flex-basis: 27.5%;
+        font-size: 6.5px;
+    }
+
+    p#ultimo{
+        padding-top: 12.95rem;
     }
 
     .footer-delv{
