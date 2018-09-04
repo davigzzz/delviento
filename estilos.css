@@ -66,9 +66,10 @@ body {
   .logo{
       
     background-image: url("icono.svg");
-    width: 32vw;
-    /* height: 70px; */
+     width: 32vw;
+     height: 70px;
     margin: 2rem 2rem; 
+    margin-top: 32px;
     padding-bottom: 2.2rem;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -77,13 +78,16 @@ body {
 
   @media only screen and (min-width: 768px){
     .topnav{
-        height: 130px;
+        height: 140px;
     }
   }
-  
-  /* .logo:hover{
-    background-image: url("logo-principal-active.svg");
-} */
+/* 
+  @media only screen and (min-width: 1300px){
+    .topnav{
+        height: 160px;
+    }
+  }
+   */
 
 /* BOTON DE MENU */
     /* contenedor */
@@ -116,7 +120,7 @@ body {
         padding-right: 2rem;    
     }
     .logo{
-        width: 17vw;
+        width: 14rem;
     }
 
     
@@ -129,12 +133,11 @@ body {
 
 }
 
-@media only screen and (min-width: 1300px){
+/* @media only screen and (min-width: 1300px){
     .topnav-right{
- 
         padding-top: 3.65rem;
     }
-}
+} */
 
 
 
