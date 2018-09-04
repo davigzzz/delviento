@@ -112,7 +112,7 @@ body {
     .topnav-right{
         display: block;
         float: right;  
-        padding-top: 2.45rem;  
+        padding-top: 2.2rem;  
         padding-right: 2rem;    
     }
     .logo{
@@ -122,11 +122,18 @@ body {
     
 
     .iconos a{
-        padding-top: 1.875rem;
+        padding-top: 1.65rem;
         padding-left: .7rem;
         padding-right: .7rem;
     }
 
+}
+
+@media only screen and (min-width: 1300px){
+    .topnav-right{
+ 
+        padding-top: 3.65rem;
+    }
 }
 
 
