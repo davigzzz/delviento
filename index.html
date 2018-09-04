@@ -15,6 +15,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+        <script src="index.js"></script>
     <!-- Estilo custom -->
     <link rel="stylesheet" href="estilos.css">
     <!-- Fontawesome (íconos) -->
@@ -28,7 +29,7 @@
     <!-- HEADER -->
 
 
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <!-- <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,7 +43,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PRODUCTOS</a>
+                    <a class="nav-link" href="#" >PRODUCTOS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">CONTACTO</a>
@@ -50,13 +51,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">DISPREH</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item">                        
                     <a class="nav-link" href="#">
                         <i class="fab fa-facebook-f fa-1.5x"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#" sty>
                         <i class="fab fa-google-plus-g fa-1.5x"></i>
                     </a>
                 </li>
@@ -67,7 +68,46 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
+    <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">nosotros</a>
+                <a href="#">productos</a>                
+                <a href="#" class="active">CONTACTO</a>
+                <a href="#">dispreh</a>
+            </div>
+        </div>
+    
+    
+        
+            
+            <div class="topnav">
+                <a href="#" class="logo"></a>
+                <div class="topnav-right">
+                    <a href="#">nosotros</a>
+                    <a href="#">productos</a>                  
+                    <a href="#" class="active">contacto</a>
+                    <a href="#">dispreh</a>
+                    <span class="iconos">
+                            <a href=""><i class="fab fa-facebook-f fa-1.5x"></i></a>
+                            <a href=""><i class="fab fa-google-plus-g fa-1.5x"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in fa-1.5x"></i></a>
+        
+                    </span>
+                    
+
+    
+                </div>
+                <div class="btn-menu">
+                    <i class="fas fa-bars" onclick="openNav()"></i>
+                    <!-- <img src="menu-icon.svg" alt="menu" onclick="openNav()" class="btn-menu-svg"> -->
+                    <!-- <span  style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+                </div>
+            </div>
+    
+    
+        
 
 
     <!-- TEXTO Y CONTACTO -->
@@ -218,6 +258,15 @@
     </footer>
 
 </div>
+<script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 </body>
 
 </html>

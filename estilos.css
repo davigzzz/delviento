@@ -1,4 +1,12 @@
-* {box-sizing: border-box;}
+@font-face {
+    font-family: oratorstd;
+    src: url("OratorStd.otf") format("opentype");
+}
+
+* 
+{
+    box-sizing: border-box;
+    font-family: oratorstd;}
 :root {
     font-size: 16px;
     }
@@ -22,24 +30,194 @@ body {
 
 
 /* MENU *************************************************/
+/* BARRA DE NAVEGACION */
+.topnav {
+    justify-content: space-between;
+    display: flex;
+    overflow: hidden;
+    background-color: #E3C7C0;
+    height: 170px;
+  }
+  /* propiedades */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+
+    color: #C4AEAB;
+  }
+  
+  .topnav a.active {
+   
+    color: #C4AEAB;
+  }
+  /* desaparecerlo en movil */
+  .topnav-right {    
+    display: none;
+  }
+
+  /* LOGO */
+  .logo{
+      
+    background-image: url("icono.svg");
+    width: 32vw;
+    height: 70px;
+    margin: 2rem 2rem; 
+    padding-bottom: 2.2rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+  }
+  
+  /* .logo:hover{
+    background-image: url("logo-principal-active.svg");
+} */
+
+/* BOTON DE MENU */
+    /* contenedor */
+  .btn-menu{
+      margin: 1rem 2rem;
+  }
+  /* boton */
+  
+   /* DIMENSIONES DEL LOGO Y MENU IPAD */
+   @media only screen and (min-width: 768px) and (max-width: 899px) {
+    .logo{
+        margin: 3rem 3rem;
+    }
+    .btn-menu-svg{
+        padding: 40px 0;
+    }
+  }
+
+  /* DESAPARECER MENU Y MOSTRAR BARRA DE NAVEGACION */
+@media only screen and (min-width: 900px){
+    .btn-menu{
+        display: none;
+    }
+    
+    .topnav-right{
+        display: block;
+        float: right;  
+        padding-top: 2.45rem;  
+        padding-right: 2rem;    
+    }
+    .logo{
+        width: 17vw;
+    }
+
+    
+
+    .iconos a{
+        padding-top: 1.875rem;
+        padding-left: .7rem;
+        padding-right: .7rem;
+    }
+
+}
+
+
+
+
+/* MENU Y SU ANIMACION */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #28324D;
+    background-color: #28324D;
+    overflow-x: hidden;
+    transition: 1.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .overlay-content a.active{
+    color: #929292;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #929292;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    
+    right: 0px;
+    font-size: 60px;
+}
+
+/* TAMAÑO DE BOTON DE CERRADO DEL MENU */
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+    .overlay .closebtn {
+        position: absolute;        
+        right: 45px;
+        font-size: 80px;
+    }
+  }
+
 /* Hacer crecer la barra del menú (mas alta) */
-.navbar{
+/* .navbar{
     padding-top: 12px;
     padding-bottom: 12px;
 }
 /* cambiar fondo del menú */
- .navbar{
+ /* .navbar{
     background-color: #E3C7C0;
       
-}
+} */
 /* espaciar elementos del menu */
-.nav-item{
+/* .nav-item{
     padding-left: 1rem;
 } 
+
+.nav-link{
+    padding-top: 2rem;
+}  */
+/* Encerrar iconos en círculos */
+
+ i.fab {
+  /* margin: 0.5em; */
+  color: white;
+  border: 1px solid #929292;
+  border-radius: 50%;
+  padding: 0.5em;
+  transition: all .5s ease;
+  width: 2.1em;
+  text-align: center; 
+} 
+
+i.fab:hover{
+    background: #929292
+}
 /* ***************************************************** */
 
 
-/* Cambiar orden de las cosas en móviles */
+/* Cambiar orden de las cosas en móviles (primeros tres elementos después de header)*/
 @media screen and (max-width: 480px) {
     .imagen {
       order: 2;
@@ -59,7 +237,7 @@ body {
     height: 20rem;
     position: static;
 } 
-/* Create two unequal columns that floats next to each other */
+/*Imagen y datos de contacto Create two unequal columns that floats next to each other */
 .column {
     float: left;
 }
