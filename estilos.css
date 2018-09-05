@@ -660,14 +660,21 @@ height: 300px;
  
 /* texto del formulario */
 input[type=text]{
+    letter-spacing: 3px;
     width: 80%;
     margin: 8px 0;
     box-sizing: border-box;
     border: none;
-    color: rgb(140, 142, 143);
+    color: rgb(217, 221, 223);
     border-bottom: 1px solid rgb(120, 121, 124);
     margin-bottom:5rem; 
     font-size: 1rem;
+}
+
+::placeholder {
+    font-family: gothamlight;
+    color: rgb(167, 160, 160);
+    opacity: 1; /* Firefox */
 }
 /* formulario */
 .formulario{
@@ -706,10 +713,12 @@ input[type=text]{
         height: 15px;
         margin-right: 0.9rem;
         background-size: 100%;
-        background-repeat: no-repeat;
-        
-      
+        background-repeat: no-repeat;    
 }
+#icon-gota:hover{
+    background-image: url("gota-selecta.svg");
+}
+
 /* boton de formulario */
 input[type=submit]{
     align-items: center;
@@ -725,6 +734,12 @@ input[type=submit]{
     font-family: gothamlight;
     padding-left:2.5rem;
     padding-right: 2.5rem;
+}
+
+input[type="submit"]:hover {
+    border: rgba(0, 113, 176, 255);
+    color: white;
+    background-color: rgba(0, 113, 176, 255)
 }
 
 /* imagen y formulario para telefono */
