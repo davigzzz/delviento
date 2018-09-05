@@ -588,6 +588,10 @@ height: 300px;
 }
 
 @media screen and (max-width: 600px){
+    /* .row{
+        height: auto;
+    } */
+    
     .salto{
         display:none;
     }
@@ -618,6 +622,7 @@ height: 300px;
     margin-right: 0px;
     display: inline-block;
     width: 100%;
+    
 }
 .textura{
     object-fit: contain;
@@ -638,11 +643,18 @@ height: 300px;
     display:none;
 }
 
+
+
 @media only screen and (min-width: 600px) and (max-width: 899px) {
     #textura{
         content: url("textura_ipad.png");
     }
 } 
+@media only screen and (min-width: 600px){
+    .row{
+        height: 450px;;
+    }
+}
 
  
 /* texto del formulario */
@@ -658,16 +670,43 @@ input[type=text]{
 }
 /* formulario */
 .formulario{
-    padding-left: 5rem;
+    /* padding-left: 5rem; */
     font-family: gothamlight;
 }
 /* terminos bajo el formulario */
+.a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .terms{
+    font-family: gothamlight;
+    display: flex;
     font-size: 9.37px;
     text-align: center;
-    padding-right: 5rem;
     padding-top: 1rem;
     font-family: gothamlight;
+    align-items: center;
+    justify-content: center;
+}
+.terms span{
+    font-family: gothamlight;
+}
+.gota{      
+        background-image: url("gota\ copia.svg");
+        width: 0.5rem;
+        height: 12px;
+        margin-right: 1rem;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        
+      
 }
 /* boton de formulario */
 input[type=submit]{
@@ -675,7 +714,7 @@ input[type=submit]{
     align-content: center;
     margin-top: 2rem;
     font-size: 1rem;
-    margin-left: 35%;
+    /* margin-left: 35%; */
     border: 1px solid;
     border-color:rgba(0, 113, 176, 255);
     color:rgba(0, 113, 176, 255);
@@ -688,9 +727,11 @@ input[type=submit]{
 
 /* imagen y formulario para telefono */
 @media screen and (max-width: 600px) {
+    
     .formulario{
-        padding-left: 3rem;
+     
         padding-bottom: 1rem;
+        padding-top: 2rem;
     }
 
     .terms{
@@ -698,7 +739,7 @@ input[type=submit]{
     }
 
     input[type=submit]{
-        margin-left: 30%;
+
         margin-bottom: 2rem;
     }
 
