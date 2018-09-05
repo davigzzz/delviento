@@ -1,6 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 @font-face {
     font-family: oratorstd;
     src: url("OratorStd.otf") format("opentype");
+}
+
+@font-face{
+    font-family: gothamlight;
+    src: url("Gotham-Light.otf") format("opentype");
 }
 
 * 
@@ -222,6 +228,14 @@ i.fab:hover{
 }
 /* ***************************************************** */
 
+p, .right div{
+    font-family: gothamLight;
+}
+
+h1{
+    font-family: Raleway;
+}
+
 
 /* Cambiar orden de las cosas en móviles (primeros tres elementos después de header)*/
 @media screen and (max-width: 480px) {
@@ -268,6 +282,10 @@ i.fab:hover{
     font-size: 15.07px;
 }
 
+.column .right{
+    font-family: gothamLight;
+}
+
 .right {
   width: 45%;
   background-color: #F2F2F2;
@@ -275,6 +293,7 @@ i.fab:hover{
   display: flex;
   flex-wrap: wrap;
   font-size: 0.9rem;
+  font-family: gothamLight;
 }
 
 
