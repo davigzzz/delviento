@@ -269,7 +269,7 @@ h1{
 
 
  .row1 {
-    height: 22rem;
+    height: 23rem;
     position: static;
 } 
 /*Imagen y datos de contacto Create two unequal columns that floats next to each other */
@@ -700,6 +700,7 @@ input[type=text]{
     font-family: gothamlight;
 }
 #icon-gota{      
+        cursor: pointer;
         background-image: url("gota\ copia.svg");
         width: 0.5rem;
         height: 12px;
@@ -713,7 +714,7 @@ input[type=text]{
 input[type=submit]{
     align-items: center;
     align-content: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 1rem;
     /* margin-left: 35%; */
     border: 1px solid;
