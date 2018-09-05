@@ -72,10 +72,11 @@ body {
   .logo{
       
     background-image: url("icono.svg");
-     width: 8rem;
-     height: 70px;
-    margin: 2rem 2rem; 
-    margin-top: 32px;
+    width: 11rem;
+    height: 70px;
+    /* margin: 2rem, 2rem; */
+    margin-top: 1.5rem;
+    margin-left: 2rem;
     padding-bottom: 2.2rem;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -108,7 +109,7 @@ body {
    @media only screen and (min-width: 768px) and (max-width: 1100px) {
     .logo{
        
-        width: 13rem;
+        width: 14rem;
     }
     .btn-menu{
         padding-top: 2rem;
