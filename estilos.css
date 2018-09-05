@@ -652,9 +652,9 @@ height: 300px;
     }
 } 
 @media only screen and (min-width: 600px){
-    .row{
-        height: 450px;;
-    }
+    /* .row{
+        height: 550px;;
+    } */
 }
 
  
@@ -665,8 +665,8 @@ input[type=text]{
     box-sizing: border-box;
     border: none;
     color: rgb(140, 142, 143);
-    border-bottom: 2px solid rgb(88,89,91);
-    margin-bottom:3.2rem; 
+    border-bottom: 1px solid rgb(120, 121, 124);
+    margin-bottom:4.3rem; 
     font-size: 1rem;
 }
 /* formulario */
@@ -702,9 +702,9 @@ input[type=text]{
 #icon-gota{      
         cursor: pointer;
         background-image: url("gota\ copia.svg");
-        width: 0.5rem;
-        height: 12px;
-        margin-right: 1rem;
+        width: 0.7rem;
+        height: 15px;
+        margin-right: 0.9rem;
         background-size: 100%;
         background-repeat: no-repeat;
         
@@ -962,3 +962,5 @@ p#desarrollo{
         display: none;
     }
 }
+
+
