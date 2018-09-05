@@ -418,6 +418,10 @@ h1{
 }
 /* Datos de Contacto Laptop y tablet grande */
 @media only screen and (min-width: 900px)  /*and (max-width: 1599px)*/{
+    .row1{
+        height: 22rem;
+    }
+    
     .right div{
         padding-left: 3rem;       
     }
