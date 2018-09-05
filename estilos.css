@@ -651,13 +651,15 @@ input[type=text]{
     margin: 8px 0;
     box-sizing: border-box;
     border: none;
-    border-bottom: 2px solid gray;
+    color: rgb(140, 142, 143);
+    border-bottom: 2px solid rgb(88,89,91);
     margin-bottom:3rem; 
     font-size: 1rem;
 }
 /* formulario */
 .formulario{
     padding-left: 5rem;
+    font-family: gothamlight;
 }
 /* terminos bajo el formulario */
 .terms{
@@ -665,6 +667,7 @@ input[type=text]{
     text-align: center;
     padding-right: 5rem;
     padding-top: 1rem;
+    font-family: gothamlight;
 }
 /* boton de formulario */
 input[type=submit]{
@@ -678,7 +681,9 @@ input[type=submit]{
     color:rgba(0, 113, 176, 255);
     background: transparent;
     cursor: pointer;
-    
+    font-family: gothamlight;
+    padding-left:2.5rem;
+    padding-right: 2.5rem;
 }
 
 /* imagen y formulario para telefono */
