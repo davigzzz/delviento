@@ -130,21 +130,21 @@
                 <form action="/forma.php" class="formulario">
                     <br>
                     <div class="b">
-                    <input type="text" name="nombre" placeholder="NOMBRE*">
-                    <br>
-                    <br>
-                    <input type="text" name="apellido" placeholder="APELLIDO">
-                    <br>
-                    <br>
-                    <input type="text" name="correo" id="" placeholder="CORREO E.*">
-                    <br>
-                    <br>
-                    <input type="text" name="telefono" id="" placeholder="TELÉFONO">
-                    <br>
-                    <br>
-                </div>
+                        <input type="text" name="nombre" placeholder="NOMBRE*">
+                        <br>
+                        <br>
+                        <input type="text" name="apellido" placeholder="APELLIDO">
+                        <br>
+                        <br>
+                        <input type="text" name="correo" id="" placeholder="CORREO E.*">
+                        <br>
+                        <br>
+                        <input type="text" name="telefono" id="" placeholder="TELÉFONO">
+                        <br>
+                        <br>
+                    </div>
                     <div class="terms">
-                        <div class="gota"></div><span> ACEPTO TÉRMINOS Y CONDICIONES </span>
+                        <div href="javascript:void(0)" id="icon-gota" onclick="cambia()"></div><span> ACEPTO TÉRMINOS Y CONDICIONES </span>
                     </div>
                     <div class="a"> <input type="submit" value="ENVIAR">
                     </div>
@@ -228,6 +228,15 @@
 
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
+        }
+
+        function cambia() {
+            if (document.getElementById("icon-gota").style.backgroundImage == "gota\ copia.svg") {
+                document.getElementById("icon-gota").style.backgroundImage = "gota-selecta.svg";
+            }
+            else {
+                document.getElementById("icon-gota").style.backgroundImage = "gota\ copia.svg";
+            }
         }
     </script>
 </body>

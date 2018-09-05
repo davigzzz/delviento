@@ -269,7 +269,7 @@ h1{
 
 
  .row1 {
-    height: 20rem;
+    height: 22rem;
     position: static;
 } 
 /*Imagen y datos de contacto Create two unequal columns that floats next to each other */
@@ -666,7 +666,7 @@ input[type=text]{
     border: none;
     color: rgb(140, 142, 143);
     border-bottom: 2px solid rgb(88,89,91);
-    margin-bottom:3rem; 
+    margin-bottom:3.2rem; 
     font-size: 1rem;
 }
 /* formulario */
@@ -689,7 +689,7 @@ input[type=text]{
 .terms{
     font-family: gothamlight;
     display: flex;
-    font-size: 9.37px;
+    font-size: 12.37px;
     text-align: center;
     padding-top: 1rem;
     font-family: gothamlight;
@@ -699,7 +699,7 @@ input[type=text]{
 .terms span{
     font-family: gothamlight;
 }
-.gota{      
+#icon-gota{      
         background-image: url("gota\ copia.svg");
         width: 0.5rem;
         height: 12px;
