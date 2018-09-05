@@ -646,15 +646,15 @@ height: 300px;
 
 
 
-@media only screen and (min-width: 600px) and (max-width: 899px) {
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
     #textura{
         content: url("textura_ipad.png");
     }
 } 
 @media only screen and (min-width: 600px){
-    /* .row{
-        height: 550px;;
-    } */
+    .row{
+        height: 600px;;
+    } 
 }
 
  
@@ -666,7 +666,7 @@ input[type=text]{
     border: none;
     color: rgb(140, 142, 143);
     border-bottom: 1px solid rgb(120, 121, 124);
-    margin-bottom:4.3rem; 
+    margin-bottom:5rem; 
     font-size: 1rem;
 }
 /* formulario */
