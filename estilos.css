@@ -176,7 +176,7 @@ body {
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 15%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -213,6 +213,7 @@ i.fas{
 .overlay .iconos-menu{
     display: flex;
     justify-content: center;
+    padding-top: 5rem;
 }
 
 .overlay .iconos-menu .fa-1x {
