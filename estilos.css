@@ -890,13 +890,17 @@ a{
     flex-basis: 40%;
 }
 
+.col-centro a i{
+    padding-top: 5rem;
+
+}
+
 .logo-blanco{
     background-image: url("logo-blanco.svg");
     width: 8rem;
     height: 90px;
     /* margin: 2rem, 2rem; */
     margin-top: .73rem;
-    margin-left: 2rem;
     padding-bottom: 2.2rem;
     background-size: 100%;
     background-repeat: no-repeat;
