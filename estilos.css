@@ -81,7 +81,7 @@ body {
     height: 70px;
     /* margin: 2rem, 2rem; */
     margin-top: 1.3rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     padding-bottom: 2.2rem;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -95,6 +95,7 @@ body {
 
     .logo{
         margin: 2rem, 2rem;
+        margin-left:2rem;
     }
 
   }
@@ -258,7 +259,7 @@ b{
 
 h1{
     font-family: Raleway;
-    font-size: 28.74px;
+    font-size: 24.74px;
 }
 
 
@@ -304,7 +305,7 @@ h1{
 }
 
 .parrafo{
-    font-size: 15.07px;
+    font-size: 14.07px;
 }
 
 
@@ -357,7 +358,7 @@ h1{
             width: 100%;
         }
         .left .titulo{
-            padding-top: 1.5rem;
+            padding-top: 2.5rem;
             padding-left: 1rem;
         }
         
@@ -372,9 +373,7 @@ h1{
     
         .right div:nth-child(1){
             padding-top: 50px;
-            padding-right: 61px;
-
-           
+            padding-right: 61px;           
         }
 
         .right div:last-child{
@@ -382,9 +381,13 @@ h1{
         }
         
         .right div:nth-child(3){
-            display:none;
-            
+            display:none;            
         }
+
+        
+.column.right div a{
+    font-size: 14px;
+}
     
         
     }
@@ -433,6 +436,17 @@ h1{
     .right div:nth-child(5){
         padding-top: 90px;
         order: 3;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .left p{
+        font-size: 14.07px;
+        letter-spacing: 0;
+    }
+
+    .left{
+        height: 230px;
     }
 }
 
@@ -593,13 +607,14 @@ height: 300px;
 .contactamos h1{
     padding-left: 3rem;
     padding-top: 4.5rem;
+    font-size: 24.74px;
 }
 
 .contactamos p{
     padding: 3rem;
     padding-top: 2.5rem;
-    
-
+    font-size: 14.07px;    
+    letter-spacing: 0;
 }
 
 @media screen and (max-width: 600px){
