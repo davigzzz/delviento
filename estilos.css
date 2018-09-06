@@ -210,6 +210,11 @@ i.fas{
     color: white;
 }
 
+.overlay .iconos-menu{
+    display: flex;
+    justify-content: center;
+}
+
 /* TAMAÑO DE BOTON DE CERRADO DEL MENU */
 @media only screen and (min-width: 768px) and (max-width: 899px) {
     .overlay .closebtn {
