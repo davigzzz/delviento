@@ -630,10 +630,10 @@ height: 300px;
 }
 
 .right2 {
-    width: 45%;  
+    width: 55%;  
  }
  .left2 {
-    width: 55%;
+    width: 45%;
   }
   
   /* IMAGEN DE TEXTURA */
@@ -828,19 +828,24 @@ input[type="submit"]:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.diamante{   
-    width: 25px;
-    height: 25px;
-    background: transparent;
-    transform: rotate(45deg);
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid;
-    border-color: #C09349;
-    margin-top: 59px;
-    display: flex;       
+
+.logo-blanco{
+    background-image: url("logo-blanco.svg");
+    width: 8rem;
+    height: 90px;
+    /* margin: 2rem, 2rem; */
+    margin-top: .73rem;
+    padding-bottom: 5.2rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 }
+
+a i{
+    padding-top: 2.8rem;
+
+}
+
 a{
     color: white;
 }
@@ -891,7 +896,7 @@ a{
 }
 
 .col-centro a i{
-    padding-top: 5rem;
+    padding-top: 6.5rem;
 
 }
 
@@ -918,7 +923,7 @@ a{
 }
 .legal{
     letter-spacing: 1px;
-    font-size: 8px;
+    font-size: 10px;
     padding-top: 4.3rem;
 }
 
@@ -932,14 +937,15 @@ a{
 }
 
 p#ultimo{
-     padding-top: 2.3rem; 
+     padding-top: 50.5px; 
 }
 
 .contacto-footer{
     font-size: 10.5px;
     justify-content: center;
-    padding-top: 16vw;
+    padding-top: 154px;
     text-align: justify;
+    text-align: center;
 
 }
 
@@ -950,7 +956,7 @@ p#ultimo{
         padding-left: 4rem;
     }
     .contacto-footer{
-        padding-top: 110px;
+        padding-top: 154px;
     }
     p#ultimo{
         padding-top: 50.5px;
