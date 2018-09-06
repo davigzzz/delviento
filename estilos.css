@@ -322,7 +322,11 @@ h1{
     clear: both;
 }
 
-
+.column.right div a{
+    font-family: gothamlight;
+    font-size: 0.9rem;
+    color: black;
+}
 
 
 /* Datos de contacto */
@@ -807,10 +811,7 @@ input[type="submit"]:hover {
   
 
 
-/* Comienza footer */
-
-
-
+/* COMIENZA FOOTER */
 /* Footer movil */
 
 .footer-movil{
@@ -846,7 +847,7 @@ a i{
 
 }
 
-a{
+.footer-movil a{
     color: white;
 }
 .letra{
@@ -874,6 +875,10 @@ a{
     color: white;
 
     letter-spacing: 2px;
+}
+
+.footer-grande a{
+    color: white;
 }
 
 .col-izquierda{
