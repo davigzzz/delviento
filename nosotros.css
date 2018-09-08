@@ -248,7 +248,7 @@ i.fab:hover{
     padding-right: 35px;
     padding-bottom: 40px;
     padding-left: 35px;
-    font-size: 9px;
+    font-size: 14.07px;
     letter-spacing: 2.56px;
 }
 
@@ -257,7 +257,7 @@ i.fab:hover{
     padding-right: 35px;
     padding-bottom: 40px;
     padding-left: 35px;
-    font-size: 9px;
+    font-size: 14.07px;
     letter-spacing: 2.56px;
 }
 
@@ -267,7 +267,7 @@ i.fab:hover{
 
 @media only screen and (min-width: 768px){
     .texto1 p, .texto2 p{
-        font-size: 12px;
+        font-size: 14px;
         padding-left: 72px;
         padding-right: 72px;
     }
@@ -296,7 +296,7 @@ i.fab:hover{
     padding-right: 100px;
     padding-bottom: 40px;
     padding-left: 20px;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 2.56px;
     }
 
@@ -322,19 +322,19 @@ i.fab:hover{
 
 .cap p{
     text-align: center;
-    font-size: 10px;
+    font-size: 1.2rem;
     margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 768px){
     .cap p{
-      font-size: 1rem;
+      font-size: 3rem;
     }
 }
 
 @media only screen and (min-width: 1200px){
     .cap p{
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 8.1rem;
         margin-top: 8.1rem;
     }
@@ -344,21 +344,26 @@ i.fab:hover{
     .fila{
         display: flex;
     }
-    .sillones-rosas{
-        flex: 50%;
-        transition: all .5s ease;
-
-    }
-    .sillones-azules{
+    
+    .sillones{
         flex: 50%;
         transition: all .5s ease;
 
     }
 }
 
-.middle {
-    font-size: 1.5rem;
-    color: white;
+
+.image {
+    
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -367,13 +372,19 @@ i.fab:hover{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-
+  
+  
+  .text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
 @media only screen and (min-width: 1200px){
-    .sillones-azules:hover, .sillones-rosas:hover{
+    .sillones:hover .image{
         filter: brightness(.5);
     }
 
-    .sillones-azules:hover .middle, .sillones-rosas:hover .middle{
+    .sillones:hover .middle{
         opacity: 1;
     }
 
