@@ -172,6 +172,7 @@ body {
     background-color: #28324D;
     background-color: #28324D;
     overflow-x: hidden;
+    -webkit-transition: 1.5s;
     transition: 1.5s;
 }
 
