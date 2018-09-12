@@ -237,6 +237,29 @@ i.fab:hover{
     background-image: url('path/to/image.jpg');
 }  */
 
+.portada-parallax{
+    background-image: url("imagenes_nosotros/rodillo.jpg");
+    /* Set a specific height */
+    min-height: 100vh; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+@media only screen and (min-width: 1100px){
+    .portada-movil{
+        display: none;
+    }   
+    .portada-parallax{
+        display: block;
+    }
+}
+
+
+
 
 /* EMPIEZA PRIMERA SECCIÓN MÓVIL */
 .texto1, .texto2, .texto1-2{
