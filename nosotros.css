@@ -297,11 +297,9 @@ i.fab:hover{
 }
 
 @media only screen and (min-width: 1200px){
-    .texto2{
-        display: none;
-    }
+
     .texto1{
-        flex: 50%;
+        flex: 100%;
     }
 
     .texto1-2{
@@ -309,19 +307,22 @@ i.fab:hover{
         flex: 50%;
     }
 
-    .texto1 p{
-        padding-left: 100px;
-        padding-right: 20px;
+    .texto1 p, .texto2 p{
+        font-size: 25px;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
     }
 
-    .texto1-2 p{
+    /* .texto1-2 p{
     padding-top: 31px;
     padding-right: 100px;
     padding-bottom: 40px;
     padding-left: 20px;
     font-size: 14px;
     letter-spacing: 2.56px;
-    }
+    } */
 
     .textos{
         display: flex;
@@ -359,7 +360,6 @@ i.fab:hover{
     .cap p{
         font-size: 3rem;
         margin-bottom: 8.1rem;
-        margin-top: 8.1rem;
     }
 }
 
